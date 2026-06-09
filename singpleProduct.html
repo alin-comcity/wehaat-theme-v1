@@ -1,0 +1,500 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>WEHAAT</title>
+  </head>
+  <body>
+    <!-- Header Section Start -->
+    <header class="w-full bg-slate-900 shadow-lg">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col gap-4 py-4 lg:flex-row lg:items-center lg:justify-between"
+        >
+          <!-- Logo -->
+          <div class="flex items-center justify-between">
+            <a href="#" class="text-3xl font-bold text-white"> WEHAAT </a>
+          </div>
+
+          <!-- Search -->
+          <div class="w-full lg:max-w-2xl">
+            <form class="relative">
+              <input
+                type="text"
+                placeholder="Search products..."
+                class="w-full rounded-full border-0 bg-white py-3 pl-5 pr-14 text-gray-700 shadow-md outline-none ring-2 ring-transparent transition focus:ring-indigo-400"
+              />
+
+              <button
+                type="submit"
+                class="absolute right-2 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-indigo-600 text-white transition hover:bg-indigo-700"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-4.35-4.35m1.85-5.15a7 7 0 1 1-14 0a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- Links -->
+          <nav
+            class="flex flex-wrap items-center gap-6 text-sm font-medium text-white"
+          >
+            <a href="#" class="transition hover:text-indigo-300"> Wishlist </a>
+
+            <a href="#" class="transition hover:text-indigo-300"> Cart </a>
+
+            <a href="#" class="transition hover:text-indigo-300"> Account </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Menubar Section Start -->
+    <nav class="bg-white shadow-sm border-b border-gray-200">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <ul class="flex items-center gap-8 text-sm font-medium text-gray-700">
+          <!-- Home -->
+          <li>
+            <a
+              href="#"
+              class="inline-block py-4 border-b-2 border-transparent hover:border-black hover:text-black transition"
+            >
+              Home
+            </a>
+          </li>
+
+          <!-- Electronics -->
+          <li class="relative group">
+            <a
+              href="#"
+              class="inline-block py-4 border-b-2 border-transparent hover:border-black hover:text-black transition"
+            >
+              Electronics
+            </a>
+
+            <!-- Submenu -->
+            <div
+              class="absolute left-0 top-full hidden w-48 bg-white shadow-lg group-hover:block hover:block z-50"
+            >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-black hover:text-white"
+              >
+                Laptop
+              </a>
+
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-black hover:text-white"
+              >
+                Mobile
+              </a>
+
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-black hover:text-white"
+              >
+                Accessories
+              </a>
+            </div>
+          </li>
+
+          <!-- Fashion -->
+          <li class="relative group">
+            <a
+              href="#"
+              class="inline-block py-4 border-b-2 border-transparent hover:border-black hover:text-black transition"
+            >
+              Fashion
+            </a>
+
+            <!-- Submenu -->
+            <div
+              class="absolute left-0 top-full hidden w-48 bg-white shadow-lg group-hover:block hover:block z-50"
+            >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-black hover:text-white"
+              >
+                Men's Clothing
+              </a>
+
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-black hover:text-white"
+              >
+                Women's Clothing
+              </a>
+            </div>
+          </li>
+
+          <!-- Other menus -->
+          <li>
+            <a
+              href="#"
+              class="inline-block py-4 border-b-2 border-transparent hover:border-black hover:text-black transition"
+            >
+              Beauty
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="inline-block py-4 border-b-2 border-transparent hover:border-black hover:text-black transition"
+            >
+              Offers
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Menubar Section End -->
+
+    <!-- Singple Product Section Start -->
+    <section class="bg-white py-10">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
+          <!-- LEFT: PRODUCT IMAGE -->
+          <div>
+            <div class="overflow-hidden rounded-xl border border-gray-200">
+              <img
+                src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+                class="w-full object-cover transition hover:scale-105"
+              />
+            </div>
+
+            <!-- thumbnails -->
+            <div class="mt-4 grid grid-cols-4 gap-3">
+              <img
+                src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+                class="h-20 w-full rounded-lg border object-cover cursor-pointer"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+                class="h-20 w-full rounded-lg border object-cover cursor-pointer"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+                class="h-20 w-full rounded-lg border object-cover cursor-pointer"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+                class="h-20 w-full rounded-lg border object-cover cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <!-- RIGHT: PRODUCT INFO -->
+          <div>
+            <!-- Title -->
+            <h1 class="text-2xl font-bold text-gray-900">
+              HP All-in-One Desktop PC
+            </h1>
+
+            <!-- Rating -->
+            <div class="mt-2 text-sm text-yellow-400">
+              ★★★★☆ <span class="text-gray-500">(4.6 reviews)</span>
+            </div>
+
+            <!-- Price -->
+            <div class="mt-4 flex items-center gap-3">
+              <span class="text-2xl font-bold text-gray-900">৳94,500</span>
+              <span class="text-lg text-gray-400 line-through">৳110,000</span>
+              <span class="rounded-md bg-red-500 px-2 py-1 text-xs text-white"
+                >-15%</span
+              >
+            </div>
+
+            <!-- Short description -->
+            <p class="mt-4 text-gray-600">
+              HP All-in-One PC is designed for office and home use with high
+              performance, sleek design and powerful processor for multitasking.
+            </p>
+
+            <!-- Options -->
+            <div class="mt-6 space-y-4">
+              <!-- RAM -->
+              <div>
+                <h3 class="text-sm font-semibold text-gray-700">RAM</h3>
+                <div class="mt-2 flex gap-2">
+                  <button
+                    class="rounded-md border px-3 py-1 text-xs hover:bg-indigo-600 hover:text-white"
+                  >
+                    8GB
+                  </button>
+                  <button
+                    class="rounded-md border px-3 py-1 text-xs hover:bg-indigo-600 hover:text-white"
+                  >
+                    16GB
+                  </button>
+                  <button
+                    class="rounded-md border px-3 py-1 text-xs hover:bg-indigo-600 hover:text-white"
+                  >
+                    32GB
+                  </button>
+                </div>
+              </div>
+
+              <!-- Storage -->
+              <div>
+                <h3 class="text-sm font-semibold text-gray-700">Storage</h3>
+                <div class="mt-2 flex gap-2">
+                  <button
+                    class="rounded-md border px-3 py-1 text-xs hover:bg-indigo-600 hover:text-white"
+                  >
+                    256GB SSD
+                  </button>
+                  <button
+                    class="rounded-md border px-3 py-1 text-xs hover:bg-indigo-600 hover:text-white"
+                  >
+                    512GB SSD
+                  </button>
+                  <button
+                    class="rounded-md border px-3 py-1 text-xs hover:bg-indigo-600 hover:text-white"
+                  >
+                    1TB SSD
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="mt-8 flex gap-3">
+              <button
+                class="flex-1 rounded-lg bg-indigo-600 py-3 text-sm font-semibold text-white hover:bg-indigo-700"
+              >
+                Add to Cart
+              </button>
+
+              <button
+                class="flex-1 rounded-lg border border-gray-300 py-3 text-sm font-semibold text-gray-700 hover:bg-gray-100"
+              >
+                Buy Now
+              </button>
+            </div>
+
+            <!-- Extra Info -->
+            <div class="mt-6 text-sm text-gray-500 space-y-1">
+              <p>✔ In Stock</p>
+              <p>✔ Free Delivery Available</p>
+              <p>✔ 1 Year Warranty</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Description -->
+        <section class="bg-white py-10">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <!-- Tabs -->
+            <div class="border-b border-gray-200">
+              <div class="flex flex-wrap gap-4">
+                <button
+                  onclick="showTab('details')"
+                  id="tab-details"
+                  class="tab-btn border-b-2 border-indigo-600 px-4 py-2 text-sm font-medium text-indigo-600"
+                >
+                  Product Details
+                </button>
+
+                <button
+                  onclick="showTab('specs')"
+                  id="tab-specs"
+                  class="tab-btn px-4 py-2 text-sm font-medium text-gray-600 hover:text-indigo-600"
+                >
+                  Specifications
+                </button>
+
+                <button
+                  onclick="showTab('reviews')"
+                  id="tab-reviews"
+                  class="tab-btn px-4 py-2 text-sm font-medium text-gray-600 hover:text-indigo-600"
+                >
+                  Reviews
+                </button>
+
+                <button
+                  onclick="showTab('shipping')"
+                  id="tab-shipping"
+                  class="tab-btn px-4 py-2 text-sm font-medium text-gray-600 hover:text-indigo-600"
+                >
+                  Shipping & Warranty
+                </button>
+              </div>
+            </div>
+
+            <!-- TAB CONTENT -->
+            <div class="mt-6">
+              <!-- DETAILS -->
+              <div id="details" class="tab-content">
+                <h2 class="text-lg font-semibold text-gray-900">
+                  Product Details
+                </h2>
+                <p class="mt-3 text-gray-600 leading-relaxed">
+                  HP All-in-One PC offers powerful performance, sleek design and
+                  smooth multitasking experience suitable for office and home
+                  users.
+                </p>
+              </div>
+
+              <!-- SPECS -->
+              <div id="specs" class="tab-content hidden">
+                <h2 class="text-lg font-semibold text-gray-900">
+                  Specifications
+                </h2>
+
+                <ul class="mt-3 space-y-2 text-sm text-gray-600">
+                  <li>✔ Processor: Intel Core i5 12th Gen</li>
+                  <li>✔ RAM: 16GB DDR4</li>
+                  <li>✔ Storage: 512GB SSD</li>
+                  <li>✔ Display: 24-inch Full HD</li>
+                </ul>
+              </div>
+
+              <!-- REVIEWS -->
+              <div id="reviews" class="tab-content hidden">
+                <h2 class="text-lg font-semibold text-gray-900">
+                  Customer Reviews
+                </h2>
+
+                <div class="mt-4 space-y-4">
+                  <div class="rounded-lg border p-4">
+                    <p class="text-sm font-medium">⭐ ⭐ ⭐ ⭐ ☆</p>
+                    <p class="text-sm text-gray-600">
+                      Great product, very fast performance.
+                    </p>
+                  </div>
+
+                  <div class="rounded-lg border p-4">
+                    <p class="text-sm font-medium">⭐ ⭐ ⭐ ⭐ ⭐</p>
+                    <p class="text-sm text-gray-600">
+                      Perfect for office use. Highly recommended.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SHIPPING -->
+              <div id="shipping" class="tab-content hidden">
+                <h2 class="text-lg font-semibold text-gray-900">
+                  Shipping & Warranty
+                </h2>
+
+                <ul class="mt-3 space-y-2 text-sm text-gray-600">
+                  <li>✔ Free delivery inside Bangladesh</li>
+                  <li>✔ 2-3 days delivery time</li>
+                  <li>✔ 1 year official warranty</li>
+                  <li>✔ Easy return policy available</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- JS -->
+        <script>
+          function showTab(tabId) {
+            // hide all
+            document.querySelectorAll(".tab-content").forEach((el) => {
+              el.classList.add("hidden");
+            });
+
+            // remove active style
+            document.querySelectorAll(".tab-btn").forEach((el) => {
+              el.classList.remove(
+                "border-b-2",
+                "border-indigo-600",
+                "text-indigo-600",
+              );
+              el.classList.add("text-gray-600");
+            });
+
+            // show selected
+            document.getElementById(tabId).classList.remove("hidden");
+
+            // active tab style
+            const activeBtn = document.getElementById("tab-" + tabId);
+            activeBtn.classList.add(
+              "border-b-2",
+              "border-indigo-600",
+              "text-indigo-600",
+            );
+            activeBtn.classList.remove("text-gray-600");
+          }
+        </script>
+      </div>
+    </section>
+    <!-- Singple Product Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="bg-gray-900 text-gray-300">
+      <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+          <!-- Brand -->
+          <div>
+            <h2 class="text-xl font-bold text-white">WEHAAT</h2>
+            <p class="mt-4 text-sm text-gray-400">
+              Your trusted online store for electronics, fashion, and daily
+              essentials. Best quality products at the best price.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-sm font-semibold text-white">Quick Links</h3>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li><a href="#" class="hover:text-white">Home</a></li>
+              <li><a href="#" class="hover:text-white">Shop</a></li>
+              <li><a href="#" class="hover:text-white">About Us</a></li>
+              <li><a href="#" class="hover:text-white">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Categories -->
+          <div>
+            <h3 class="text-sm font-semibold text-white">Categories</h3>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li><a href="#" class="hover:text-white">Mobiles</a></li>
+              <li><a href="#" class="hover:text-white">Laptops</a></li>
+              <li><a href="#" class="hover:text-white">Fashion</a></li>
+              <li><a href="#" class="hover:text-white">Accessories</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h3 class="text-sm font-semibold text-white">Contact</h3>
+            <ul class="mt-4 space-y-2 text-sm text-gray-400">
+              <li>Email: support@wehaat.com</li>
+              <li>Phone: +880 1234 567890</li>
+              <li>Address: Dhaka, Bangladesh</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div
+          class="mt-10 border-t border-gray-800 pt-6 text-center text-sm text-gray-500"
+        >
+          © 2026 WEHAAT. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+  </body>
+</html>
