@@ -1,0 +1,533 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>WEHAAT</title>
+  </head>
+  <body>
+    <!-- Header Section Start -->
+    <header class="w-full bg-slate-900 shadow-lg">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col gap-4 py-4 lg:flex-row lg:items-center lg:justify-between"
+        >
+          <!-- Logo -->
+          <div class="flex items-center justify-between">
+            <a href="#" class="text-3xl font-bold text-white"> WEHAAT </a>
+          </div>
+
+          <!-- Search -->
+          <div class="w-full lg:max-w-2xl">
+            <form class="relative">
+              <input
+                type="text"
+                placeholder="Search products..."
+                class="w-full rounded-full border-0 bg-white py-3 pl-5 pr-14 text-gray-700 shadow-md outline-none ring-2 ring-transparent transition focus:ring-indigo-400"
+              />
+
+              <button
+                type="submit"
+                class="absolute right-2 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-indigo-600 text-white transition hover:bg-indigo-700"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-4.35-4.35m1.85-5.15a7 7 0 1 1-14 0a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- Links -->
+          <nav
+            class="flex flex-wrap items-center gap-6 text-sm font-medium text-white"
+          >
+            <a href="#" class="transition hover:text-indigo-300"> Wishlist </a>
+
+            <a href="#" class="transition hover:text-indigo-300"> Cart </a>
+
+            <a href="#" class="transition hover:text-indigo-300"> Account </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Menubar Section Start -->
+    <nav class="bg-white shadow-sm border-b border-gray-200">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <ul class="flex items-center gap-8 text-sm font-medium text-gray-700">
+          <!-- Home -->
+          <li>
+            <a
+              href="#"
+              class="inline-block py-4 border-b-2 border-transparent hover:border-black hover:text-black transition"
+            >
+              Home
+            </a>
+          </li>
+
+          <!-- Electronics -->
+          <li class="relative group">
+            <a
+              href="#"
+              class="inline-block py-4 border-b-2 border-transparent hover:border-black hover:text-black transition"
+            >
+              Electronics
+            </a>
+
+            <!-- Submenu -->
+            <div
+              class="absolute left-0 top-full hidden w-48 bg-white shadow-lg group-hover:block hover:block z-50"
+            >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-black hover:text-white"
+              >
+                Laptop
+              </a>
+
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-black hover:text-white"
+              >
+                Mobile
+              </a>
+
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-black hover:text-white"
+              >
+                Accessories
+              </a>
+            </div>
+          </li>
+
+          <!-- Fashion -->
+          <li class="relative group">
+            <a
+              href="#"
+              class="inline-block py-4 border-b-2 border-transparent hover:border-black hover:text-black transition"
+            >
+              Fashion
+            </a>
+
+            <!-- Submenu -->
+            <div
+              class="absolute left-0 top-full hidden w-48 bg-white shadow-lg group-hover:block hover:block z-50"
+            >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-black hover:text-white"
+              >
+                Men's Clothing
+              </a>
+
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm hover:bg-black hover:text-white"
+              >
+                Women's Clothing
+              </a>
+            </div>
+          </li>
+
+          <!-- Other menus -->
+          <li>
+            <a
+              href="#"
+              class="inline-block py-4 border-b-2 border-transparent hover:border-black hover:text-black transition"
+            >
+              Beauty
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="inline-block py-4 border-b-2 border-transparent hover:border-black hover:text-black transition"
+            >
+              Offers
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Menubar Section End -->
+
+    <!-- Hero Section Start -->
+    <section class="relative">
+      <div class="h-[500px] overflow-hidden mx-auto max-w-screen-xl">
+        <img
+          src="https://images.unsplash.com/photo-1550009158-9ebf69173e03"
+          class="h-full w-full object-cover"
+          alt=""
+        />
+        <!-- Bottom Fade -->
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gray-100"
+        ></div>
+      </div>
+    </section>
+
+    <section class="relative z-10 -mt-64 pb-10">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <!-- Box 1 -->
+          <div class="bg-white p-5 shadow-lg">
+            <h2 class="mb-4 text-xl font-bold">Gaming Accessories</h2>
+
+            <img
+              src="https://images.unsplash.com/photo-1587829741301-dc798b83add3"
+              class="h-72 w-full rounded-md object-cover"
+              alt="Gaming Accessories"
+            />
+
+            <p class="mt-3 text-sm text-gray-600">
+              Discover gaming headsets, keyboards, mice and accessories.
+            </p>
+
+            <a
+              href="#"
+              class="mt-4 inline-block text-sm text-sky-700 hover:underline"
+            >
+              See more
+            </a>
+          </div>
+
+          <!-- Box 2 -->
+          <div class="bg-white p-5 shadow-lg">
+            <h2 class="mb-4 text-xl font-bold">Shop Laptops</h2>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Business</p>
+              </div>
+
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Premium</p>
+              </div>
+
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Student</p>
+              </div>
+
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1484788984921-03950022c9ef"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Gaming</p>
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="mt-4 inline-block text-sm text-sky-700 hover:underline"
+            >
+              See more
+            </a>
+          </div>
+
+          <!-- Box 3 -->
+          <div class="bg-white p-5 shadow-lg">
+            <h2 class="mb-4 text-xl font-bold">Smart Devices</h2>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Phones</p>
+              </div>
+
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1546868871-7041f2a55e12"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Watches</p>
+              </div>
+
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Audio</p>
+              </div>
+
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1583394838336-acd977736f90"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Accessories</p>
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="mt-4 inline-block text-sm text-sky-700 hover:underline"
+            >
+              See more
+            </a>
+          </div>
+
+          <!-- Box 4 -->
+          <div class="bg-white p-5 shadow-lg">
+            <h2 class="mb-4 text-xl font-bold">Office Essentials</h2>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1497366754035-f200968a6e72"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Desks</p>
+              </div>
+
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Workspace</p>
+              </div>
+
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Printers</p>
+              </div>
+
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Networking</p>
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="mt-4 inline-block text-sm text-sky-700 hover:underline"
+            >
+              See more
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Hero Section Start -->
+    <section class="relative">
+      <div class="h-[500px] overflow-hidden mx-auto max-w-screen-7xl">
+        <img
+          src="https://images.unsplash.com/photo-1550009158-9ebf69173e03"
+          class="h-full w-full object-cover"
+          alt=""
+        />
+        <!-- Bottom Fade -->
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gray-100"
+        ></div>
+      </div>
+    </section>
+
+    <section class="relative z-10 -mt-64 pb-10">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <!-- Box 1 -->
+          <div class="bg-white p-5 shadow-lg">
+            <h2 class="mb-4 text-xl font-bold">Gaming Accessories</h2>
+
+            <img
+              src="https://images.unsplash.com/photo-1587829741301-dc798b83add3"
+              class="h-72 w-full rounded-md object-cover"
+              alt="Gaming Accessories"
+            />
+
+            <p class="mt-3 text-sm text-gray-600">
+              Discover gaming headsets, keyboards, mice and accessories.
+            </p>
+
+            <a
+              href="#"
+              class="mt-4 inline-block text-sm text-sky-700 hover:underline"
+            >
+              See more
+            </a>
+          </div>
+
+          <!-- Box 2 -->
+          <div class="bg-white p-5 shadow-lg">
+            <h2 class="mb-4 text-xl font-bold">Shop Laptops</h2>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Business</p>
+              </div>
+
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Premium</p>
+              </div>
+
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Student</p>
+              </div>
+
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1484788984921-03950022c9ef"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Gaming</p>
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="mt-4 inline-block text-sm text-sky-700 hover:underline"
+            >
+              See more
+            </a>
+          </div>
+
+          <!-- Box 3 -->
+          <div class="bg-white p-5 shadow-lg">
+            <h2 class="mb-4 text-xl font-bold">Smart Devices</h2>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Phones</p>
+              </div>
+
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1546868871-7041f2a55e12"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Watches</p>
+              </div>
+
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Audio</p>
+              </div>
+
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1583394838336-acd977736f90"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Accessories</p>
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="mt-4 inline-block text-sm text-sky-700 hover:underline"
+            >
+              See more
+            </a>
+          </div>
+
+          <!-- Box 4 -->
+          <div class="bg-white p-5 shadow-lg">
+            <h2 class="mb-4 text-xl font-bold">Office Essentials</h2>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1497366754035-f200968a6e72"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Desks</p>
+              </div>
+
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Workspace</p>
+              </div>
+
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Printers</p>
+              </div>
+
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+                  class="h-28 w-full object-cover"
+                />
+                <p class="mt-1 text-xs">Networking</p>
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="mt-4 inline-block text-sm text-sky-700 hover:underline"
+            >
+              See more
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+  </body>
+</html>
